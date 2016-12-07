@@ -1,11 +1,14 @@
 package com.nfreports.mainstage;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.geometry.Rectangle2D;
-import javafx.scene.Parent;
+import javafx.scene.Group;
 import javafx.scene.Scene;
+import javafx.scene.control.ScrollPane;
 import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
+import javafx.scene.web.WebEngine;
+import javafx.scene.web.WebView;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -31,22 +34,36 @@ public class Main extends Application {
     }
 
     public void initMainstage() {
-        try {
-            Screen screen = Screen.getPrimary();
-            Rectangle2D bounds = screen.getVisualBounds();
+//        try {
+            Scene scene = new Scene(new Group());
+            VBox root = new VBox();
 
-            Parent root = FXMLLoader.load(getClass().getResource("view/mainstage.fxml"));
-            this.primaryStage.setTitle("NFReports");
-            this.primaryStage.setScene(new Scene(root));
-            // this.primaryStage.setX(bounds.getMaxX());
-            this.primaryStage.setY(bounds.getMinY());
-            this.primaryStage.setWidth(bounds.getWidth());
-            this.primaryStage.setHeight(bounds.getHeight());
+            WebView browser = new WebView();
+            WebEngine webEngine = browser.getEngine();
+            webEngine.load("../../resources/views/mainstage.html");
+
+            ScrollPane scrollPane = new ScrollPane();
+            scrollPane.setContent(browser);
+            webEngine.loadContent("<p><b>Foooooooi...</b></p>");
+
+            root.getChildren().addAll(scrollPane);
+            scene.setRoot(root);
+
+            this.primaryStage.setScene(scene);
             this.primaryStage.show();
-            // this.primaryStage.setMaximized(true);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+
+//            // setting up properties
+//            Screen screen = Screen.getPrimary();
+//            Rectangle2D bounds = screen.getVisualBounds();
+//            this.primaryStage.setTitle("NFReports");
+//            this.primaryStage.setScene(new Scene(webEngine));
+//            this.primaryStage.setY(bounds.getMinY());
+//            this.primaryStage.setWidth(bounds.getWidth());
+//            this.primaryStage.setHeight(bounds.getHeight());
+//            this.primaryStage.show();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public static void main(String[] args) {
