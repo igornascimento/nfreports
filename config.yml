@@ -1,0 +1,9 @@
+logging:
+  level: INFO
+  loggers:
+    nfReports: DEBUG
+
+server:
+  rootPath: /api/*
+
+dateFormat: yyyy-MM-dd'T'HH:mmZ
