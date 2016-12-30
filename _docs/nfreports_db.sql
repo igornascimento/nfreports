@@ -62,18 +62,6 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `nfreports_db`.`invoice`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `nfreports_db`.`invoice` (
-  `id_invoice` INT NOT NULL,
-  `id_customer` INT NULL,
-  `id_address` INT NULL,
-  `id_payment_method` INT NULL,
-  PRIMARY KEY (`id_invoice`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
 -- Table `nfreports_db`.`customer`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `nfreports_db`.`customer` (
@@ -81,12 +69,24 @@ CREATE TABLE IF NOT EXISTS `nfreports_db`.`customer` (
   `name` VARCHAR(45) NULL,
   `doc_number` INT NULL,
   `state_registration` VARCHAR(45) NULL,
-  `invoice_id_invoice` INT NOT NULL,
-  PRIMARY KEY (`id_customer`, `invoice_id_invoice`),
-  INDEX `fk_customer_invoice1_idx` (`invoice_id_invoice` ASC),
-  CONSTRAINT `fk_customer_invoice1`
-    FOREIGN KEY (`invoice_id_invoice`)
-    REFERENCES `nfreports_db`.`invoice` (`id_invoice`)
+  PRIMARY KEY (`id_customer`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `nfreports_db`.`invoice`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `nfreports_db`.`invoice` (
+  `id_invoice` INT NOT NULL,
+  `id_customer` INT NULL,
+  `id_address` INT NULL,
+  `id_payment_method` INT NULL,
+  `customer_id_customer` INT NOT NULL,
+  PRIMARY KEY (`id_invoice`, `customer_id_customer`),
+  INDEX `fk_invoice_customer1_idx` (`customer_id_customer` ASC),
+  CONSTRAINT `fk_invoice_customer1`
+    FOREIGN KEY (`customer_id_customer`)
+    REFERENCES `nfreports_db`.`customer` (`id_customer`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -209,8 +209,8 @@ CREATE TABLE IF NOT EXISTS `nfreports_db`.`customer_has_address` (
   INDEX `fk_customer_has_address_address1_idx` (`address_id_address` ASC),
   INDEX `fk_customer_has_address_customer1_idx` (`customer_id_customer` ASC, `customer_invoice_id_invoice` ASC),
   CONSTRAINT `fk_customer_has_address_customer1`
-    FOREIGN KEY (`customer_id_customer` , `customer_invoice_id_invoice`)
-    REFERENCES `nfreports_db`.`customer` (`id_customer` , `invoice_id_invoice`)
+    FOREIGN KEY (`customer_id_customer`)
+    REFERENCES `nfreports_db`.`customer` (`id_customer`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_customer_has_address_address1`
@@ -241,6 +241,33 @@ CREATE TABLE IF NOT EXISTS `nfreports_db`.`invoice_has_address` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `nfreports_db`.`rule`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `nfreports_db`.`rule` (
+  `id_rule` INT NOT NULL,
+  `description` VARCHAR(45) NULL,
+  PRIMARY KEY (`id_rule`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `nfreports_db`.`user`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `nfreports_db`.`user` (
+  `id_user` INT NOT NULL,
+  `email` (255) NULL,
+  `password` (32) NOT NULL,
+  `id_rule` INT NOT NULL,
+  `create_time` DATETIME NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_user`, `id_rule`),
+  CONSTRAINT `id_rule`
+    FOREIGN KEY ()
+    REFERENCES `nfreports_db`.`rule` ()
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION);
 
 
 SET SQL_MODE=@OLD_SQL_MODE;

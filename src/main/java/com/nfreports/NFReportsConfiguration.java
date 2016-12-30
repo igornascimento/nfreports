@@ -1,8 +1,8 @@
 package com.nfreports;
 
-import com.mysql.cj.jdbc.MysqlDataSourceFactory;
 import io.dropwizard.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.dropwizard.db.DataSourceFactory;
 import org.hibernate.validator.constraints.*;
 
 import javax.validation.Valid;
@@ -16,12 +16,9 @@ public class NFReportsConfiguration extends Configuration {
     @NotEmpty
     private String server;
 
-    /**
-     * Data base access configuration
-     */
     @NotNull
     @Valid
-    private MysqlDataSourceFactory dataSourceFactory = new MysqlDataSourceFactory();
+    private DataSourceFactory database = new DataSourceFactory();
 
 
     public String getDateFormat() {
@@ -33,8 +30,8 @@ public class NFReportsConfiguration extends Configuration {
     }
 
     @JsonProperty("database")
-    public MysqlDataSourceFactory getDataSourceFactory() {
-        return dataSourceFactory;
+    public DataSourceFactory getDataSourceFactory() {
+        return database;
     }
 
 }
