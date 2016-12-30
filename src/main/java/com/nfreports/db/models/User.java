@@ -21,64 +21,74 @@ import java.io.Serializable;
 public class User implements Serializable {
 
     @Id
+    @JsonProperty("id_user")
     @Column(name = "id_user")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @JsonProperty("email")
     @Column(name = "email", nullable = false)
     private String email;
 
+    @JsonProperty("password")
     @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "rule", nullable = false)
-    private Integer rule;
+    @JsonProperty("role")
+    @Column(name = "role", nullable = false)
+    private Integer role;
 
+    @JsonProperty("creation_time")
     @Column(name = "creation_time", nullable = false)
     private DateTime creationTime;
 
 
-    @JsonProperty
+    @JsonProperty("id_user")
     public Integer getId() {
         return id;
     }
 
+    @JsonProperty("id_user")
     public void setId(Integer id) {
         this.id = id;
     }
 
-    @JsonProperty
+    @JsonProperty("email")
     public String getEmail() {
         return email;
     }
 
+    @JsonProperty("email")
     public void setEmail(String email) {
         this.email = email;
     }
 
-    @JsonProperty
+    @JsonProperty("password")
     public String getPassword() {
         return password;
     }
 
+    @JsonProperty("password")
     public void setPassword(String password) {
         this.password = password;
     }
 
-    @JsonProperty
-    public Integer getRule() {
-        return rule;
+    @JsonProperty("role")
+    public Integer getRole() {
+        return role;
     }
 
-    public void setRule(Integer rule) {
-        this.rule = rule;
+    @JsonProperty("role")
+    public void setRole(Integer role) {
+        this.role = role;
     }
 
-    @JsonProperty
+    @JsonProperty("creation_time")
     public DateTime getCreationTime() {
         return creationTime;
     }
 
+    @JsonProperty("creation_time")
     public void setCreationTime(DateTime creationTime) {
         this.creationTime = creationTime;
     }
