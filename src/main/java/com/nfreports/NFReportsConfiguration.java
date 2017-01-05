@@ -8,6 +8,12 @@ import org.hibernate.validator.constraints.*;
 import javax.validation.Valid;
 import javax.validation.constraints.*;
 
+/**
+ * Configuration class
+ *
+ * @author Igor Nascimento <igornascimento@gmail.com>
+ * @version 1.0
+ */
 public class NFReportsConfiguration extends Configuration {
 
     @NotEmpty

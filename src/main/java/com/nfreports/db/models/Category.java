@@ -27,32 +27,28 @@ import javax.persistence.Table;
 public class Category implements Serializable {
 
     @Id
-    @JsonProperty("id_category")
     @Column(name = "id_category")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @JsonProperty("name")
     @Column(name = "name", nullable = false)
     private String name;
 
 
-    @JsonProperty("id_category")
+    @JsonProperty
     public Integer getId() {
         return id;
     }
 
-    @JsonProperty("id_category")
     public void setId(Integer id) {
         this.id = id;
     }
 
-    @JsonProperty("name")
+    @JsonProperty
     public String getName() {
         return name;
     }
 
-    @JsonProperty("name")
     public void setName(String name) {
         this.name = name;
     }
