@@ -2,6 +2,7 @@ package com.nfreports;
 
 import com.nfreports.db.UserDAO;
 import io.dropwizard.Application;
+import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.hibernate.HibernateBundle;
 import io.dropwizard.setup.Bootstrap;
@@ -14,7 +15,7 @@ public class NFReportsApplication extends Application<NFReportsConfiguration> {
     }
 
     /**
-     * Hibernate
+     * Hibernate bundle
      */
     private final HibernateBundle<NFReportsConfiguration> hibernate = new HibernateBundle<NFReportsConfiguration>(UserDAO.class) {
         @Override
@@ -23,28 +24,38 @@ public class NFReportsApplication extends Application<NFReportsConfiguration> {
         }
     };
 
-    @Override
-    public String getName() {
-        return "NFReports";
-    }
-
+    /**
+     * Initializes application
+     * @param bootstrap
+     */
     @Override
     public void initialize(final Bootstrap<NFReportsConfiguration> bootstrap) {
         // initializing Hibernate
         bootstrap.addBundle(hibernate);
+
+        // static pages
+        bootstrap.addBundle(new AssetsBundle("views","/login","login.html","login"));
     }
 
+    /**
+     * Configures resources and runs the application
+     * @param configuration
+     * @param environment
+     */
     @Override
     public void run(final NFReportsConfiguration configuration,
                     final Environment environment) {
 
-        // DateFormat actualDate = new SimpleDateFormat(configuration.getDateFormat());
-        // environment.getObjectMapper().setDateFormat(actualDate);
+        configureResources(configuration, environment);
+    }
 
-        final UserDAO userDAO = new UserDAO(hibernate.getSessionFactory());
-        environment.jersey().register(userDAO);
-
-        System.out.println(userDAO.getAll());
+    /**
+     * Resources configurations (available endpoints)
+     * @param config NFReportsConfiguration
+     * @param env Environment
+     */
+    protected void configureResources(NFReportsConfiguration config, Environment env) {
+        //TODO: include all resources here
     }
 
 }
