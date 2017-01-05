@@ -9,7 +9,7 @@ import com.nfreports.db.models.User;
 
 /**
  * UserDAO
- * @author Igor Nascimento <igornascimento@gmail.com>
+ * @author Igor Nascimento {@literal <igornascimento@gmail.com>}
  * @version 1.0
  */
 public class UserDAO extends AbstractDAO<User> {

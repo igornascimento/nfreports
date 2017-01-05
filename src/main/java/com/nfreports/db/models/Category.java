@@ -15,7 +15,7 @@ import javax.persistence.Table;
 /**
  * Category entity
  *
- * @author Igor Nascimento <igornascimento@gmail.com>
+ * @author Igor Nascimento {@literal <igornascimento@gmail.com>}
  * @version 1.0
  */
 @Entity
