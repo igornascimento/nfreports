@@ -1,11 +1,13 @@
 package com.nfreports;
 
 import com.nfreports.db.UserDAO;
+import com.nfreports.resources.AuthRESTController;
 import io.dropwizard.Application;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.hibernate.HibernateBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
+import org.hibernate.SessionFactory;
 
 /**
  * Initiates the application
@@ -37,19 +39,18 @@ public class NFReportsApplication extends Application<NFReportsConfiguration> {
     public void initialize(final Bootstrap<NFReportsConfiguration> bootstrap) {
         // initializing Hibernate
         bootstrap.addBundle(hibernate);
+        SessionFactory sessionFactory = hibernate.getSessionFactory();
+        AuthRESTController authenticator = new AuthRESTController();
+
+        //TODO: check for logged user
+        // if ()
     }
 
     @Override
     public void run(final NFReportsConfiguration configuration,
                     final Environment environment) {
 
-        // DateFormat actualDate = new SimpleDateFormat(configuration.getDateFormat());
-        // environment.getObjectMapper().setDateFormat(actualDate);
-
-        final UserDAO userDAO = new UserDAO(hibernate.getSessionFactory());
-        environment.jersey().register(userDAO);
-
-        System.out.println(userDAO.getAll());
+        this.initialize(configuration, environment);
     }
 
 }

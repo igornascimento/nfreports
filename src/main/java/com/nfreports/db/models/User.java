@@ -16,7 +16,10 @@ import java.io.Serializable;
 @Table(name = "user")
 @NamedQueries({
         @NamedQuery(name = "com.nfreports.db.getAll",
-                query = "select u from User u")
+                    query = "select u from User u"),
+
+        @NamedQuery(name = "com.nfreports.db.findByUsernameAndPassword",
+                    query = "select u from User u where u.email = :email and u.password = :password")
 })
 public class User implements Serializable {
 
