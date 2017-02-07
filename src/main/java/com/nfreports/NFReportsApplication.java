@@ -40,17 +40,14 @@ public class NFReportsApplication extends Application<NFReportsConfiguration> {
         // initializing Hibernate
         bootstrap.addBundle(hibernate);
         SessionFactory sessionFactory = hibernate.getSessionFactory();
-        AuthRESTController authenticator = new AuthRESTController();
-
-        //TODO: check for logged user
-        // if ()
     }
 
     @Override
     public void run(final NFReportsConfiguration configuration,
                     final Environment environment) {
 
-        this.initialize(configuration, environment);
+        // TODO: check logged user
+        //AuthRESTController authenticator = new AuthRESTController(configuration);
     }
 
 }
