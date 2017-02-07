@@ -28,7 +28,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>com.bjedrzejewski.tasklistservice.TaskListServiceApplication</mainClass>
+                            <mainClass>com.nfreports.NFReportsApplication</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

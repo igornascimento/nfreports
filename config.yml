@@ -6,12 +6,12 @@ logging:
 server:
   rootPath: /api/*
 
-dateFormat: yyyy-MM-dd'T'HH:mmZ
+#dateFormat: yyyy-MM-dd'T'HH:mmZ
 
-database:
-  driverClass: com.mysql.jdbc.Driver
-  user: root
-  password: 1234
-  url: jdbc:myslq://localhost:3306/nfreports_db
+#database:
+#  driverClass: com.mysql.jdbc.Driver
+#  user: root
+#  password: 1234
+#  url: jdbc:myslq://localhost:3306/nfreports_db
 
 maxLength: 100
