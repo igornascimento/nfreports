@@ -13,3 +13,5 @@ database:
   user: root
   password: 1234
   url: jdbc:myslq://localhost:3306/nfreports_db
+
+maxLength: 100

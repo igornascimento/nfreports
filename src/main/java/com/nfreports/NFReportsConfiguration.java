@@ -2,42 +2,19 @@ package com.nfreports;
 
 import io.dropwizard.Configuration;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import io.dropwizard.db.DataSourceFactory;
-import org.hibernate.validator.constraints.*;
+import org.hibernate.validator.constraints.NotEmpty;
 
-import javax.validation.Valid;
-import javax.validation.constraints.*;
-
-/**
- * Configuration class
- *
- * @author Igor Nascimento <igornascimento@gmail.com>
- * @version 1.0
- */
 public class NFReportsConfiguration extends Configuration {
 
-    @NotEmpty
-    private String dateFormat;
+    private int maxLength;
 
-    @NotEmpty
-    private String server;
-
-    @NotNull
-    @Valid
-    private DataSourceFactory database = new DataSourceFactory();
-
-
-    public String getDateFormat() {
-        return this.dateFormat;
+    @JsonProperty
+    public int getMaxLength() {
+        return maxLength;
     }
 
-    public String getServer() {
-        return this.server;
+    @JsonProperty
+    public void setMaxLength(int maxLength) {
+        this.maxLength = maxLength;
     }
-
-    @JsonProperty("database")
-    public DataSourceFactory getDataSourceFactory() {
-        return database;
-    }
-
 }
