@@ -104,4 +104,37 @@ public class UserEditController {
         }
     }
 
+    /**
+     * Called when the user clicks the new button, opening a dialog
+     */
+    @FXML
+    private void handleNewUser() {
+        User tempUser = new User(null, null, null, null ,null);
+        boolean okClicked = this.mainApp.showUserEditDialog(tempUser);
+        if (okClicked) {
+            this.mainApp.getUserData().add(tempUser);
+        }
+    }
+
+    /**
+     * Called when the user clicks the edit button, opening a dialog
+     */
+    @FXML
+    private void handleEditUser() {
+        User selectedUser = this.userTable.getSelectionModel().getSelectedItem();
+        if (selectedUser != null) {
+            boolean okClicked = this.mainApp.showUserEditDialog(selectedUser);
+            if (okClicked) {
+                showUserDetails(selectedUser);
+            }
+        } else {
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.initOwner(this.mainApp.getPrimaryStage());
+            alert.setTitle("Item não selecionado");
+            alert.setHeaderText("Nenhum usuário selecionado");
+            alert.setContentText("Por favor, selecione um usuário.");
+            alert.showAndWait();
+        }
+    }
+
 }

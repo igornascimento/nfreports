@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -29,7 +30,7 @@ public class NFReportsApplication extends Application {
     }
 
     /**
-     * Temporary constructor to provide some data
+     * Temporary constructor to provide some test data
      */
     public NFReportsApplication() {
         //adding some sample data
@@ -37,10 +38,6 @@ public class NFReportsApplication extends Application {
         userData.add(new User(2, "Julio Brombatti", "juliobrombatti@gmail.com", "asdfasdf", 1));
         userData.add(new User(3, "João da Silva", "joaodasilva@gmail.com", "asdfasdf", 2));
     }
-    /**
-     * /end
-     */
-
 
     public static void main(String[] args) {
         launch(args);
@@ -74,6 +71,16 @@ public class NFReportsApplication extends Application {
     }
 
     /**
+     * Returns the main stage
+     * @return Stage primaryStage
+     */
+    public Stage getPrimaryStage() {
+        return this.primaryStage;
+    }
+
+
+    /**
+     * SHOWING ANOTHER VIEW/DIALOG:
      * Injects the user overview inside root layout
      */
     private void showUsersOverview() {
@@ -95,11 +102,41 @@ public class NFReportsApplication extends Application {
         }
     }
 
+
     /**
-     * Returns the main stage
-     * @return Stage primaryStage
+     * SHOWING ANOTHER VIEW/DIALOG:
+     * Opens a dialog to edit the user information for the selected user or create a new one.
+     * @param user object
+     * @return true if user clicks save, otherwise false
      */
-    public Stage getPrimaryStage() {
-        return this.primaryStage;
+    public boolean showUserEditDialog(User user) {
+        try {
+            //load the fxml file and create a new stage for the popup dialog
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(NFReportsApplication.class.getResource("../view/userForm.fxml"));
+            AnchorPane page = (AnchorPane) loader.load();
+
+            //create the dialog stage
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Editar usuário");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(this.primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+
+            //set the user into the controller
+            UserFormController controller = loader.getController();
+            controller.setDialogStage(dialogStage);
+            controller.setUser(user);
+
+            //shows the dialog and wait for the user confirmation
+            dialogStage.showAndWait();
+
+            return controller.isSaveClicked();
+        } catch (IOException ex) {
+            ex.printStackTrace();
+            return false;
+        }
     }
+
 }

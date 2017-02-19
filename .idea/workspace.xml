@@ -62,12 +62,61 @@
       <file leaf-file-name="NFReportsApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/NFReportsApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="111" column="47" lean-forward="false" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
-                <element signature="e#817#818#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userForm.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nfreports/view/userForm.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="28" column="79" lean-forward="false" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserFormController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/UserFormController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserEditController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/UserEditController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="112" column="54" lean-forward="false" selection-start-line="112" selection-start-column="54" selection-end-line="112" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/nfreports/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#529#530#0" expanded="true" />
+                <element signature="e#579#580#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,96 +128,9 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="62" column="104" lean-forward="false" selection-start-line="62" selection-start-column="104" selection-end-line="62" selection-end-column="111" />
+            <state relative-caret-position="435">
+              <caret line="63" column="153" lean-forward="false" selection-start-line="63" selection-start-column="153" selection-end-line="63" selection-end-column="153" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserEditController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/UserEditController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1674">
-              <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userForm.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/nfreports/view/userForm.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DateUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nfreports/util/DateUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/nfreports/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="88" column="15" lean-forward="false" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#1174#1175#0" expanded="true" />
-                <element signature="e#1205#1206#0" expanded="true" />
-                <element signature="e#1248#1249#0" expanded="true" />
-                <element signature="e#1273#1274#0" expanded="true" />
-                <element signature="e#1306#1307#0" expanded="true" />
-                <element signature="e#1337#1338#0" expanded="true" />
-                <element signature="e#1369#1370#0" expanded="true" />
-                <element signature="e#1403#1404#0" expanded="true" />
-                <element signature="e#1448#1449#0" expanded="true" />
-                <element signature="e#1476#1477#0" expanded="true" />
-                <element signature="e#1518#1519#0" expanded="true" />
-                <element signature="e#1555#1556#0" expanded="true" />
-                <element signature="e#1586#1587#0" expanded="true" />
-                <element signature="e#1619#1620#0" expanded="true" />
-                <element signature="e#1663#1664#0" expanded="true" />
-                <element signature="e#1690#1691#0" expanded="true" />
-                <element signature="e#1730#1731#0" expanded="true" />
-                <element signature="e#1765#1766#0" expanded="true" />
-                <element signature="e#1800#1801#0" expanded="true" />
-                <element signature="e#1837#1838#0" expanded="true" />
-                <element signature="e#1885#1886#0" expanded="true" />
-                <element signature="e#1916#1917#0" expanded="true" />
-                <element signature="e#1964#1965#0" expanded="true" />
-                <element signature="e#2007#2008#0" expanded="true" />
-                <element signature="e#2035#2036#0" expanded="true" />
-                <element signature="e#2068#2069#0" expanded="true" />
-                <element signature="e#2113#2114#0" expanded="true" />
-                <element signature="e#2140#2141#0" expanded="true" />
-                <element signature="e#2177#2178#0" expanded="true" />
-                <element signature="e#2212#2213#0" expanded="true" />
-                <element signature="e#2254#2255#0" expanded="true" />
-                <element signature="e#2291#2292#0" expanded="true" />
-                <element signature="e#2354#2355#0" expanded="true" />
-                <element signature="e#2385#2386#0" expanded="true" />
-                <element signature="e#2440#2441#0" expanded="true" />
-                <element signature="e#2483#2484#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -187,6 +149,8 @@
     <findStrings>
       <find>css</find>
       <find>userTableView</find>
+      <find>setuser</find>
+      <find>getuserdata</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -217,12 +181,13 @@
         <option value="$PROJECT_DIR$/src/com/nfreports/view/main.fxml" />
         <option value="$PROJECT_DIR$/src/com/nfreports/view/mainStage.fxml" />
         <option value="$PROJECT_DIR$/src/com/nfreports/NFReportsApplication.java" />
-        <option value="$PROJECT_DIR$/src/com/nfreports/model/User.java" />
-        <option value="$PROJECT_DIR$/src/com/nfreports/controller/NFReportsApplication.java" />
         <option value="$PROJECT_DIR$/src/com/nfreports/util/DateUtil.java" />
-        <option value="$PROJECT_DIR$/src/com/nfreports/view/userEdit.fxml" />
-        <option value="$PROJECT_DIR$/src/com/nfreports/controller/UserEditController.java" />
+        <option value="$PROJECT_DIR$/src/com/nfreports/controller/UserFormController.java" />
         <option value="$PROJECT_DIR$/src/com/nfreports/view/userForm.fxml" />
+        <option value="$PROJECT_DIR$/src/com/nfreports/controller/NFReportsApplication.java" />
+        <option value="$PROJECT_DIR$/src/com/nfreports/view/userEdit.fxml" />
+        <option value="$PROJECT_DIR$/src/com/nfreports/model/User.java" />
+        <option value="$PROJECT_DIR$/src/com/nfreports/controller/UserEditController.java" />
       </list>
     </option>
   </component>
@@ -250,8 +215,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -400,7 +365,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -706,7 +671,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18661518" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19176319" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -749,14 +714,102 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/nfreports/User.java">
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/NFReportsApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="1476">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/view/userForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/UserFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="55" column="25" lean-forward="false" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/NFReportsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/view/userEdit.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1116">
+          <caret line="62" column="104" lean-forward="false" selection-start-line="62" selection-start-column="104" selection-end-line="62" selection-end-column="111" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/UserEditController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/view/userForm.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/util/DateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="88" column="15" lean-forward="false" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2035#2036#0" expanded="true" />
+            <element signature="e#2068#2069#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/User.java" />
     <entry file="file://$PROJECT_DIR$/src/com/nfreports/view/userEdit.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -785,8 +838,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -807,7 +858,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -842,27 +892,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3348">
           <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nfreports/db/db.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/nfreports/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/User.java" />
     <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="233">
           <caret line="2234" column="17" lean-forward="false" selection-start-line="2234" selection-start-column="17" selection-end-line="2234" selection-end-column="17" />
-          <folding>
-            <element signature="e#83880#83881#0" expanded="false" />
-            <element signature="e#83916#83917#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -877,72 +915,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nfreports/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="88" column="15" lean-forward="false" selection-start-line="88" selection-start-column="15" selection-end-line="88" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#1174#1175#0" expanded="true" />
-            <element signature="e#1205#1206#0" expanded="true" />
-            <element signature="e#1248#1249#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#1306#1307#0" expanded="true" />
-            <element signature="e#1337#1338#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-            <element signature="e#1403#1404#0" expanded="true" />
-            <element signature="e#1448#1449#0" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1518#1519#0" expanded="true" />
-            <element signature="e#1555#1556#0" expanded="true" />
-            <element signature="e#1586#1587#0" expanded="true" />
-            <element signature="e#1619#1620#0" expanded="true" />
-            <element signature="e#1663#1664#0" expanded="true" />
-            <element signature="e#1690#1691#0" expanded="true" />
-            <element signature="e#1730#1731#0" expanded="true" />
-            <element signature="e#1765#1766#0" expanded="true" />
-            <element signature="e#1800#1801#0" expanded="true" />
-            <element signature="e#1837#1838#0" expanded="true" />
-            <element signature="e#1885#1886#0" expanded="true" />
-            <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#1964#1965#0" expanded="true" />
-            <element signature="e#2007#2008#0" expanded="true" />
-            <element signature="e#2035#2036#0" expanded="true" />
-            <element signature="e#2068#2069#0" expanded="true" />
-            <element signature="e#2113#2114#0" expanded="true" />
-            <element signature="e#2140#2141#0" expanded="true" />
-            <element signature="e#2177#2178#0" expanded="true" />
-            <element signature="e#2212#2213#0" expanded="true" />
-            <element signature="e#2254#2255#0" expanded="true" />
-            <element signature="e#2291#2292#0" expanded="true" />
-            <element signature="e#2354#2355#0" expanded="true" />
-            <element signature="e#2385#2386#0" expanded="true" />
-            <element signature="e#2440#2441#0" expanded="true" />
-            <element signature="e#2483#2484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/nfreports/util/DateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="36">
           <caret line="4" column="47" lean-forward="false" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/NFReportsApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -952,18 +930,20 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="62" column="104" lean-forward="false" selection-start-line="62" selection-start-column="104" selection-end-line="62" selection-end-column="111" />
+        <state relative-caret-position="435">
+          <caret line="63" column="153" lean-forward="false" selection-start-line="63" selection-start-column="153" selection-end-line="63" selection-end-column="153" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/UserEditController.java">
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="102" column="32" lean-forward="false" selection-start-line="102" selection-start-column="32" selection-end-line="102" selection-end-column="32" />
+        <state relative-caret-position="396">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#579#580#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -973,9 +953,39 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="33" column="14" lean-forward="false" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
+        <state relative-caret-position="504">
+          <caret line="28" column="79" lean-forward="false" selection-start-line="28" selection-start-column="79" selection-end-line="28" selection-end-column="79" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/UserEditController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="112" column="54" lean-forward="false" selection-start-line="112" selection-start-column="54" selection-end-line="112" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/NFReportsApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="111" column="47" lean-forward="false" selection-start-line="111" selection-start-column="43" selection-end-line="111" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/nfreports/controller/UserFormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="71" column="21" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

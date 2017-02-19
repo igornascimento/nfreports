@@ -60,8 +60,8 @@
                   </GridPane>
                   <ButtonBar layoutX="10.0" layoutY="304.0" prefHeight="40.0" prefWidth="392.0">
                      <buttons>
-                        <JFXButton buttonType="RAISED" ripplerFill="WHITE" style="-fx-background-color: #58c3a6;" text="Novo" textFill="WHITE" />
-                        <JFXButton buttonType="RAISED" ripplerFill="WHITE" style="-fx-background-color: #58c3a6;" text="Editar" textFill="WHITE" />
+                        <JFXButton buttonType="RAISED" ripplerFill="WHITE" style="-fx-background-color: #58c3a6;" text="Novo" onAction="#handleNewUser" textFill="WHITE" />
+                        <JFXButton buttonType="RAISED" ripplerFill="WHITE" style="-fx-background-color: #58c3a6;" text="Editar" onAction="#handleEditUser" textFill="WHITE" />
                         <JFXButton buttonType="RAISED" ripplerFill="WHITE" style="-fx-background-color: #58c3a6;" text="Remover" onAction="#handleDeleteUser" textFill="WHITE" />
                      </buttons>
                   </ButtonBar>
