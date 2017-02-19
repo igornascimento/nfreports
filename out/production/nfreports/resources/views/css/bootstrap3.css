@@ -1,6 +1,7 @@
 .root {
 	-fx-body-color : #F5F5F5;
 	-fx-outer-border : #cecece;
+	-fx-background-color: #282829;
 }
 .button,.menu-button,.toggle-button,.split-menu-button {
 	-fx-font-size: 14;

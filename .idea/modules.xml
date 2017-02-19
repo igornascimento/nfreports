@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/nfreportsII.iml" filepath="$PROJECT_DIR$/nfreportsII.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nfreports.iml" filepath="$PROJECT_DIR$/nfreports.iml" />
     </modules>
   </component>
 </project>
