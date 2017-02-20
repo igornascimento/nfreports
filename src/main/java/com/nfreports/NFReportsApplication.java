@@ -1,5 +1,7 @@
-package com.nfreports.controller;
+package com.nfreports;
 
+import com.nfreports.controller.UserEditController;
+import com.nfreports.controller.UserFormController;
 import com.nfreports.model.User;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
@@ -58,7 +60,7 @@ public class NFReportsApplication extends Application {
     private void initRootLayout() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(NFReportsApplication.class.getResource("../view/mainStage.fxml"));
+            loader.setLocation(this.getClass().getClassLoader().getResource("view/mainStage.fxml"));
             rootLayout = (BorderPane) loader.load();
 
             //shows the scene containing the root layout
@@ -86,7 +88,7 @@ public class NFReportsApplication extends Application {
     private void showUsersOverview() {
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(NFReportsApplication.class.getResource("../view/userEdit.fxml"));
+            loader.setLocation(this.getClass().getClassLoader().getResource("view/userEdit.fxml"));
             AnchorPane userOverview = (AnchorPane) loader.load();
 
             //set user overview into center of root layout.
@@ -113,7 +115,7 @@ public class NFReportsApplication extends Application {
         try {
             //load the fxml file and create a new stage for the popup dialog
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(NFReportsApplication.class.getResource("../view/userForm.fxml"));
+            loader.setLocation(this.getClass().getClassLoader().getResource("view/userForm.fxml"));
             AnchorPane page = (AnchorPane) loader.load();
 
             //create the dialog stage

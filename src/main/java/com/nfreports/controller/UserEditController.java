@@ -1,5 +1,6 @@
 package com.nfreports.controller;
 
+import com.nfreports.NFReportsApplication;
 import com.nfreports.model.User;
 import com.nfreports.util.DateUtil;
 import javafx.fxml.FXML;
