@@ -1,13 +1,27 @@
-# NFReports
+# Dropwizard login
 
-How to start the NFReports application
----
+Simple login example using Java [Dropwizard](http://dropwizard.codahale.com/getting-started/).
 
-1. Run `mvn clean install` to build your application
-1. Start application with `java -jar target/nfreports-nfreports.jar server config.yml`
-1. To check that your application is running enter url `http://localhost:8080`
+## Requirements
 
-Health Check
----
+* Java 1.7
+* Maven
 
-To see your applications health enter url `http://localhost:8081/healthcheck`
+## Setup
+
+To build:
+    ```
+    mvn package
+    ```
+
+To run jar:
+    ```
+    java -jar target/login-0.0.1-SNAPSHOT.jar server login-service.yml
+    ```
+
+1. Point DB config at database matching the schema sql in db\schema.sql
+
+2. Create the [yaml configuration file](http://dropwizard.codahale.com/manual/jdbi/) containing the DB config, login-service.yml
+
+3. Post to http://localhost:8080/session with valid values for fields 'username' and 'password' to try out.
+
