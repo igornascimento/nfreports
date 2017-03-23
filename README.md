@@ -1,27 +1,37 @@
-# Dropwizard login
+javafxwebview
+=============
 
-Simple login example using Java [Dropwizard](http://dropwizard.codahale.com/getting-started/).
+A demonstration of how to create next-gen Java desktop applications with [AngularJS](https://www.angularjs.org) and [Bootstrap](http://getbootstrap.com), by means of the JavaFX WebView component.
 
-## Requirements
+Requisites
+==========
+1. Download and install Java 8.
+2. Install [Apache Maven](http://maven.apache.org).
 
-* Java 1.7
-* Maven
 
-## Setup
+Download, compile and run
+=========================
+* Clone this repository (or download directly from github)
+```
+git clone https://github.com/lipido/javafxwebview.git
+```
+* Compile and run
+```
+cd javafxwebview
+mvn package
+cd target
+java -jar javafx-webview-demo-0.0.1-SNAPSHOT.jar
+```
 
-To build:
-    ```
-    mvn package
-    ```
-
-To run jar:
-    ```
-    java -jar target/login-0.0.1-SNAPSHOT.jar server login-service.yml
-    ```
-
-1. Point DB config at database matching the schema sql in db\schema.sql
-
-2. Create the [yaml configuration file](http://dropwizard.codahale.com/manual/jdbi/) containing the DB config, login-service.yml
-
-3. Post to http://localhost:8080/session with valid values for fields 'username' and 'password' to try out.
-
+Warning: Windows Users
+-------------
+There is a bug since Java 8 update 60 in Windows (http://hg.openjdk.java.net/openjfx/9-dev/rt/rev/d4f8c9496683),
+where WebView is unable to load resources of the webpage if the project is delivered inside a JAR file.
+The workaround is to run the project in this way:
+```
+cd javafxwebview
+mvn package
+cd target
+java -cp classes;dependency-jars\json-simple-1.1.1.jar
+WebViewDemo
+```
