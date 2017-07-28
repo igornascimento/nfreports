@@ -14,9 +14,10 @@ class DashboardController extends Controller
   */
   public function indexAction() {
     
+    $content = $this->renderView(
+      'dashboard.html.php'
+    );
 
-    $content = $this->renderView('dashboard.html');
-    
     return new Response($content);
 
   }

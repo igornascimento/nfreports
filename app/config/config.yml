@@ -20,7 +20,7 @@ framework:
     validation:      { enable_annotations: true }
     #serializer:      { enable_annotations: true }
     templating:
-        engines: ['twig']
+        engines: ['twig', 'php']
     default_locale:  "%locale%"
     trusted_hosts:   ~
     trusted_proxies: ~
@@ -30,7 +30,8 @@ framework:
         save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
     fragments:       ~
     http_method_override: true
-    assets: ~
+    assets: 
+        base_urls: http://localhost/nfreports/bundles/sb-admin-theme/
     php_errors:
         log: true
 

@@ -1,3 +1,10 @@
+<?php
+
+/**
+* 
+*/
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,13 +19,13 @@
     <title>SB Admin - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="<?php asset('lib/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
+    <link href="<?php echo $view['assets']->getUrl('/web/bundle/sb-admin-theme/lib/bootstrap/css/bootstrap.min.css'); ?>" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="<?php asset('lib/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo $view['assets']->getUrl('/web/bundle/sb-admin-theme/lib/font-awesome/css/font-awesome.min.css'); ?>" rel="stylesheet" type="text/css">
 
     <!-- Custom CSS -->
-    <link href="<?php asset('css/sb-admin.css'); ?>" rel="stylesheet">
+    <link href="<?php echo $view['assets']->getUrl('/web/bundle/sb-admin-theme/css/sb-admin.css'); ?>" rel="stylesheet">
 
 </head>
 
@@ -225,24 +232,24 @@
             </div>
         </div>
 
-        <div style="height: 10000px;"></div>
+        <!-- <div style="height: 10000px;"></div> -->
 
     </div>
 
     <!-- jQuery Version 3.1.1 -->
-    <script src="lib/jquery/jquery.js"></script>
+    <script src="<?php echo $view['assets']->getUrl('/web/bundle/sb-admin-theme/lib/jquery/jquery.js'); ?>"></script>
 
     <!-- Tether -->
-    <script src="lib/tether/tether.min.js"></script>
+    <script src="<?php echo $view['assets']->getUrl('/web/bundle/sb-admin-theme/lib/tether/tether.min.js'); ?>"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo $view['assets']->getUrl('/web/bundle/sb-admin-theme/lib/bootstrap/js/bootstrap.min.js'); ?>"></script>
 
     <!-- Chart.js -->
-    <script src="lib/chart.js/Chart.min.js"></script>
+    <script src="<?php echo $view['assets']->getUrl('/web/bundle/sb-admin-theme/lib/chart.js/Chart.min.js'); ?>"></script>
 
     <!-- SB Admin JavaScript -->
-    <script src="js/sb-admin.min.js"></script>
+    <script src="<?php echo $view['assets']->getUrl('/web/bundle/sb-admin-theme/js/sb-admin.min.js'); ?>"></script>
 
 </body>
 
